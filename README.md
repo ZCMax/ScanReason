@@ -8,9 +8,9 @@
 	<a href='https://tai-wang.github.io/' target='_blank'>Tai Wang</a>&emsp;
     <a href='https://zhangwenwei.cn/' target='_blank'>Wenwei Zhang</a>&emsp;
     <a href='https://chenkai.site/' target='_blank'>Kai Chen</a>&emsp;
-	<a href='https://xh-liu.github.io//' target='_blank'>Xihui Liu</a>&emsp;
+	<a href='https://xh-liu.github.io//' target='_blank'>Xihui Liu*</a>&emsp;
     <br>
-    Shanghai AI Laboratory&emsp;The University of Hong Kong
+    The University of Hong Kong&emsp;Shanghai AI Laboratory
     <br>
   </p>
 </p>
@@ -18,6 +18,7 @@
 
 <div id="top" align="center">
 
+[![arXiv](https://img.shields.io/badge/arXiv-2402.16174-blue)](https://arxiv.org/abs/2407.01525)
 [![](https://img.shields.io/badge/Paper-%F0%9F%93%96-blue)](./assets/ECCV_2024_ScanReason.pdf)
 [![](https://img.shields.io/badge/Project-%F0%9F%9A%80-blue)](https://zcmax.github.io/projects/ScanReason/)
 
@@ -57,7 +58,6 @@ ScanReason is the first comprehensive and hierarchical 3D reasoning grounding be
 - \[x\] First Release.
 - \[ \] Release ScanReason datasets and benchmark.
 - \[ \] Release ReGround3D code.
-
 
 ## 📄 License
 
