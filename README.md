@@ -53,11 +53,72 @@ ScanReason is the first comprehensive and hierarchical 3D reasoning grounding be
   <img src="assets/Fig_Method.png" align="center" width="100%">
 </p>
 
+## Getting Started
+**1. Installation**
+- We utilize at least 4 A100 GPU for training and inference.
+- We test the code under the following environment:
+    - CUDA 11.8
+    - Python 3.9
+    - PyTorch 2.1.0
+- Git clone our repository and creating conda environment:
+  ```bash
+  git clone https://github.com/ZCMax/ReGround3D.git
+  conda create -n reground3d python=3.9
+  conda activate reground3d
+  pip install -r requirements.txt
+  ```
+
+- Follow [EmbodiedScan Installation Doc](https://github.com/OpenRobotLab/EmbodiedScan?tab=readme-ov-file#-getting-started) to install embodiedscan series.
+
+- Compile Pointnet2
+    ```
+    cd pointnet2
+    python setup.py install --user
+    ```
+
+**2. Data Preparation**
+
+1. Follow [EmbodiedScan Data Preparation Doc](https://github.com/OpenRobotLab/EmbodiedScan/blob/main/data/README.md) to download the raw scan (RGB-D) datasets and modify the `VIDEO_FOLDER` in `train_ds.sh` to the raw data path.
+
+2. Download the text annotations from [Google Drive](https://drive.google.com/drive/folders/14SHLgKe2xKuHgpo_Cb1z_nFqXbP1jTYZ?usp=drive_link) and modify the `JSON_FOLDER` in `train_ds.sh` to the annotations path, and modify the `INFO_FILE` data path which is included in the annotations.
+
+**3. Training ReGround3D**
+
+We provide the slurm training script with 4 A100 GPUs:
+
+```
+./scripts/train_ds.sh
+```
+
+**4. Evaluation ReGround3D**
+
+After training, you can run the 
+
+```
+./scripts/convert_zero_to_fp32.sh 
+```
+
+to convert the weights to `pytorch_model.bin` file, and then use
+
+```
+./scripts/merge_lora_weights.sh
+```
+
+to merge lora weight and obtain the final checkpoints under `ReGround3D-7B`.
+
+Finally, run 
+
+```
+./scripts/eval_ds.sh
+```
+
+to obtain the grounding results.
+
 ## 📝 TODO List
 
 - \[x\] First Release.
+- \[x\] Release ReGround3D code.
 - \[ \] Release ScanReason datasets and benchmark.
-- \[ \] Release ReGround3D code.
 
 ## 📄 License
 
