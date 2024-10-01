@@ -62,9 +62,9 @@ ScanReason is the first comprehensive and hierarchical 3D reasoning grounding be
     - PyTorch 2.1.0
 - Git clone our repository and creating conda environment:
   ```bash
-  git clone https://github.com/ZCMax/ReGround3D.git
-  conda create -n reground3d python=3.9
-  conda activate reground3d
+  git clone https://github.com/ZCMax/ScanReason.git
+  conda create -n scanreason python=3.9
+  conda activate scanreason
   pip install -r requirements.txt
   ```
 
