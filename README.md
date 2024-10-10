@@ -54,7 +54,7 @@ ScanReason is the first comprehensive and hierarchical 3D reasoning grounding be
 </p>
 
 ## 🔥 News
-- [2023-10-10] We release our pre-version of ScanReason validation benchmark. Download [here](https://drive.google.com/drive/folders/1IT4dCcOKeUrGvYWps947tTPsJqTqJZf3). The corresponding 3D bounding boxes annotations could be obtained through the object ids.
+- [2023-10-10] We release our pre-version of ScanReason validation benchmark. Download [here](https://drive.google.com/drive/folders/1IT4dCcOKeUrGvYWps947tTPsJqTqJZf3). The corresponding 3D bounding boxes annotations could be obtained through the object ids from [EmbodiedScan](https://github.com/OpenRobotLab/EmbodiedScan).
 - [2023-10-01] We release the training and inference codes of ReGround3D. 
 - [2023-07-02] We release the [paper](https://arxiv.org/abs/2407.01525) of ScanReason.
 
