@@ -44,14 +44,20 @@ the 3D spatial relationships and output corresponding target object locations. I
 </p>
 ScanReason is the first comprehensive and hierarchical 3D reasoning grounding benchmark. We define 5 types of questions depending on which type of reasoning is required: Spatial reasoning and function reasoning require fundamental understanding of the 3D physical world, focusing on objects themselves and inter-object spatial relationships in a 3D scene respectively, and logistic reasoning, emotional reasoning, and safety reasoning are high-level reasoning skills built upon the two fundamental reasoning abilities to address user-centric real-world applications.
 
-<p align="center">
+<!-- <p align="center">
   <img src="assets/3d_reasoning_grounding.png" align="center" width="100%">
-</p>
+</p> -->
 
 ### Model Overview
 <p align="center">
   <img src="assets/Fig_Method.png" align="center" width="100%">
 </p>
+
+## 🔥 News
+- [2023-10-10] We release our pre-version of ScanReason validation benchmark. Download [here](https://drive.google.com/drive/folders/1IT4dCcOKeUrGvYWps947tTPsJqTqJZf3). The corresponding 3D bounding boxes annotations could be obtained through the object ids.
+- [2023-10-01] We release the training and inference codes of ReGround3D. 
+- [2023-07-02] We release the [paper](https://arxiv.org/abs/2407.01525) of ScanReason.
+
 
 ## Getting Started
 **1. Installation**
